@@ -1,0 +1,17 @@
+.about-this-project {
+    width: 100%;
+    line-height: 1.8em;
+    color: var(--Dark-gray);
+    h1 {
+        margin-bottom: 20px;
+    }
+    @include for-size(phone-only) {
+        text-align: left;
+    }
+}
+.about {
+    margin-bottom: 20px;
+    color: var(--Dark-gray);
+    line-height: 1.8em;
+
+}

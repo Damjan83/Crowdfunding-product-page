@@ -1,0 +1,120 @@
+/*------Buttons Style------*/
+.btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @include for-size(phone-only) {
+        justify-content: space-evenly;
+    }
+    @include for-size(tablet-portrait-down) {
+        justify-content: space-evenly;
+    }
+}
+.btn--cyan {
+    height: 3.5rem;
+    width: 11.5rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    background-color: var(--Moderate-cyan);
+    color: white;
+}
+.btn--gray {
+    height: 3.5rem;
+    width: 11.5rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    background-color: var(--Dark-gray);
+    color: white;
+    @include for-size(phone-only) {
+        margin-top: 20px;
+    }  
+}
+.btn--bookmark {
+    height: 3.5rem;
+    width: 9.5rem;
+    border-radius: 30px;
+    border: 1px solid lightgray;
+    cursor: pointer;
+    padding: 0;
+    color: var(--Black);
+    font-weight: 700;
+    background-image: url(../images/icon-bookmark.svg);
+    background-repeat: no-repeat;
+    @include for-size(phone-only) {
+        font-size: 0;
+        width: 58px;
+    }
+}
+.btn--p {
+    margin-left: 40px;
+}
+.btn--close {
+    color: #ccc;
+    height: 20px;
+    font-size: 30px;
+    border: none;
+    background-color: transparent;
+}
+.btn--close:hover, .btn--close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*------Activ class------ */
+.bookmarked {
+    color: var(--Dark-cyan);
+}
+.bookmarked--img {
+    background-image: url(../images/icon-bookmarked.svg);
+}
+/*------Slider------*/
+.slidecontainer {
+    width: 100%;
+    margin-top: 20px;
+    .slider {
+        width: 100%;
+    }
+}
+/*------Pledge button and input------*/
+.btn--pledge {
+    height: 3rem;
+    width: 7.5rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--Moderate-cyan);
+    color: white;
+    font-weight: 700;
+}
+.btn--pledge.active {
+    background-color: var(--Dark-gray);
+    opacity: 0.5;
+}
+#option0 {
+    height: 2rem;
+    width: 16.5rem;
+    border-radius: 30px;
+    border: 1px solid gainsboro;
+    cursor: pointer;
+}
+#option, #option0, #option1, #option2 {
+    height: 2rem;
+    width: 7.5rem;
+    border-radius: 30px;
+    border: 1px solid gainsboro;
+    cursor: pointer;
+}
+.btn--support {
+    height: 3rem;
+    width: 6rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--Moderate-cyan);
+    color: white;
+    font-weight: 700;
+}

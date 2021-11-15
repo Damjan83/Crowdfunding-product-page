@@ -1,0 +1,48 @@
+.counter {
+    width: 70%;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    transform: translate(-21%, 0%);
+    @include for-size(phone-only) {
+        display: block;
+        transform: translate(0%, 0%);
+    }
+}
+.backed, .total-backers, .days-left {
+    span {
+        font-size: 2em;
+        font-weight: 700;
+    }
+    p {
+        color: var(--Dark-gray);
+    }
+}
+.split-line {
+    width: 0.0625rem;
+    background-color: lightgray;
+    @include for-size(phone-only) {
+        width: 50%;
+        height: 1px;
+        margin: 20px auto;
+    }
+}
+.slidecontainer {
+    justify-self: center;
+    background: gainsboro;
+    height: 10px;
+    width: 80%;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    span {
+        content: "";
+        background: #3cb4ac;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 10px;
+        position: absolute;
+        border-radius: 5px;
+    }
+}
