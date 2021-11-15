@@ -17,6 +17,17 @@ targetValueEle.innerHTML = 'of $' + formatNumber(app.targetValue);
 totalBacker.innerHTML = formatNumber(app.numberOfDonation);
 progressBar.style.width = (app.currentValue / app.targetValue ) * 100 + "%";
 
+/*------Countdown days------*/
+const countDownDate = new Date("Jan 1, 2022 10:25:25").getTime();
+const x = setInterval( () => {
+    const now = new Date().getTime();
+    const distance = countDownDate - now;
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const daysElement = document.getElementById('days-left');
+    daysElement.innerHTML = days;
+    if(distance < 0) clearInterval(x);
+}, 1000);
+
 /*------Burger and mobile menu------*/
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.mob__menu');
