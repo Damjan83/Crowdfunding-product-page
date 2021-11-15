@@ -145,6 +145,8 @@ for(let i = 0; i < btnP.length ; i++){
                     ele.innerHTML = 0;
                     btnP[i].classList.add('active');
                     btnP[i].innerHTML = 'Out of stock';
+                    supportModal.style.display = 'none';
+                    modalSelSec.style.display = 'none';
                 }
             });
         }
