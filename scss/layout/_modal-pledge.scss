@@ -5,8 +5,15 @@
     p {
         width: 60%;
         color: var(--Dark-gray);
+        @include for-size(phone-only) {    
+            margin: 0 auto; 
+            margin-bottom: 15px;
+        }
     }
     input {
         margin-right: 20px;
+    }
+    @include for-size(phone-only) {    
+        display: block; 
     }
 }

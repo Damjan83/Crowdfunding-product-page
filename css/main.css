@@ -363,6 +363,9 @@ nav {
   flex-direction: column;
   position: relative;
   top: 30px; }
+  @media (max-width: 375px) {
+    .main-modal {
+      width: 90%; } }
 
 .header-modal {
   display: flex; }
@@ -379,6 +382,9 @@ nav {
   font-size: 1.1em;
   margin: 0 30px 0 20px;
   cursor: pointer; }
+  @media (max-width: 375px) {
+    .modal-h1 {
+      margin: 0; } }
 
 .modal-h1:hover {
   color: var(--Moderate-cyan); }
@@ -396,6 +402,9 @@ nav {
   padding: 20px 12px;
   border-radius: 10px;
   margin-top: 20px; }
+  @media (max-width: 375px) {
+    .modal-no-reward, .modal-bamboo, .modal-black, .modal-mahogany {
+      padding: 20px 17px; } }
 
 .pledge-top {
   display: flex; }
@@ -411,20 +420,35 @@ nav {
 .modal-p25 {
   margin-right: 195px;
   color: var(--Moderate-cyan); }
+  @media (max-width: 375px) {
+    .modal-p25 {
+      margin: 0; } }
 
 .modal-p75 {
   margin-right: 168px;
   color: var(--Moderate-cyan); }
+  @media (max-width: 375px) {
+    .modal-p75 {
+      margin: 0; } }
 
 .modal-p200 {
   margin-right: 121px;
   color: var(--Moderate-cyan); }
+  @media (max-width: 375px) {
+    .modal-p200 {
+      margin: 0; } }
 
 .modal-p {
   color: var(--Dark-gray); }
 
 .h1-left span {
   color: var(--Dark-gray); }
+
+.modal-h1-p {
+  display: flex; }
+  @media (max-width: 375px) {
+    .modal-h1-p {
+      display: block; } }
 
 .panel {
   background-color: white;
@@ -472,8 +496,15 @@ nav {
   .pledge p {
     width: 60%;
     color: var(--Dark-gray); }
+    @media (max-width: 375px) {
+      .pledge p {
+        margin: 0 auto;
+        margin-bottom: 15px; } }
   .pledge input {
     margin-right: 20px; }
+  @media (max-width: 375px) {
+    .pledge {
+      display: block; } }
 
 .support {
   position: relative;

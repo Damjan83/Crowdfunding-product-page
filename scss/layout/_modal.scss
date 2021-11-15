@@ -28,6 +28,9 @@
     flex-direction: column;
     position: relative;
     top: 30px;
+    @include for-size(phone-only) {    
+        width: 90%; 
+     }
 }
 .header-modal {
     display: flex;
@@ -46,6 +49,9 @@
     font-size: 1.1em;
     margin: 0 30px 0 20px;
     cursor: pointer;
+    @include for-size(phone-only) {    
+        margin: 0; 
+    }
 }
 .modal-h1:hover {
     color: var(--Moderate-cyan);
@@ -63,6 +69,9 @@
     padding: 20px 12px;
     border-radius: 10px;
     margin-top: 20px;
+    @include for-size(phone-only) {    
+        padding: 20px 17px; 
+    }
 }
 .pledge-top {
     display: flex;
@@ -78,20 +87,35 @@
 .modal-p25 {
     margin-right: 195px;
     color: var(--Moderate-cyan);
+    @include for-size(phone-only) {    
+        margin: 0; 
+    }
 }
 .modal-p75 {
     margin-right: 168px;
     color: var(--Moderate-cyan);
+    @include for-size(phone-only) {    
+        margin: 0; 
+    }
 }
 .modal-p200 {
     margin-right: 121px;
     color: var(--Moderate-cyan);
+    @include for-size(phone-only) {    
+        margin: 0; 
+    }
 }
 .modal-p {
     color: var(--Dark-gray)
 }
 .h1-left span{
     color: var(--Dark-gray);
+}
+.modal-h1-p {
+    display: flex;
+    @include for-size(phone-only) {    
+        display: block; 
+    }
 }
 .panel {
     background-color: white;
