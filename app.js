@@ -160,12 +160,12 @@ for(let i = 0; i < btnP.length ; i++){
                     modalSelSec.style.display = 'none';
                 }
             });
-        }
-        
+        }       
+
         if(currentInput) {
             app.currentValue = app.currentValue + Number(currentInput);
             backedAmount.innerHTML = '$' + formatNumber(app.currentValue);
-            totalBacker.innerHTML = formatNumber(app.numberOfDonation + 1);               
+            totalBacker.innerHTML = formatNumber(app.numberOfDonation += 1);               
         }
         progressBar.style.width = (app.currentValue / 100000 ) * 100 + "%";
     });
