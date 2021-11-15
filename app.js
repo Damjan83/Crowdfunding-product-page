@@ -175,13 +175,6 @@ for(let i = 0; i < btnP.length ; i++){
 function formatNumber(num){
     return num.toLocaleString('en-US');
 };
-/*
-VAZNO!!!! Svi nacini selektovanja elementa na html stranici sta primaju kao argument i sata vracaju kao tip podataka
 
-totalBacker izbaciti iz objekta i dodati ga standardno kao i ostale elemente.textContent i innerHtml 
-3. Da se namesti da se uvecava broj donacija kao i dostupnost doniranja tj da se umanju broj donacija.
-4. treba da se izracuna minimalna vrednost donacija.
-5. refaktorisanje koda.
-*/
 
 
