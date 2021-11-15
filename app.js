@@ -120,7 +120,7 @@ btnSupport.addEventListener('click' , () =>{
 //});
 
 const btnP = document.querySelectorAll('.daki');
-
+const supportModal = document.querySelector('.support');
 for(let i = 0; i < btnP.length ; i++){
     btnP[i].addEventListener('click' , (e)=>{
         let currentBtn = e.currentTarget;
@@ -134,6 +134,8 @@ for(let i = 0; i < btnP.length ; i++){
                     ele.innerHTML = 0;
                     btnP[i].classList.add('active');
                     btnP[i].innerHTML = 'Out of stock';
+                    supportModal.style.display = 'none';
+                    modalSelSec.style.display = 'none';
                 }
             });
         }else if(currentBtnDataSet == 'black-pledge') {
