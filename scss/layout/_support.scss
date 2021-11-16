@@ -23,4 +23,9 @@
         line-height: 1.8em;
         margin-bottom: 15px;
     }
+    @include for-size(phone-only) {    
+        width: 90%; 
+        height: auto;
+        top: 50px;
+    }
 }

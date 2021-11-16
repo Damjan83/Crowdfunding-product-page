@@ -108,13 +108,35 @@
 .modal-p {
     color: var(--Dark-gray)
 }
+.product-amount-1, .product-amount-2, .product-amount-3 {
+    display: block;
+    @include for-size(phone-only) {    
+        display: none; 
+    }
+}
 .h1-left span{
     color: var(--Dark-gray);
+    display: block;
+    @include for-size(phone-only) {    
+        display: none; 
+    }
+}
+.pa-1-m {
+    display: none;
+    @include for-size(phone-only) {    
+        display: flex; 
+        align-items: center;
+        margin-top: 10px;
+        .product-amount-1-mobile, .product-amount-2-mobile, .product-amount-3-mobile {
+            margin-right: 5px;
+        }
+    }
 }
 .modal-h1-p {
     display: flex;
     @include for-size(phone-only) {    
         display: block; 
+        margin: 0 auto;
     }
 }
 .panel {
