@@ -39,7 +39,7 @@ nav {
       display: block; } }
 
 .mob__menu {
-  animation: fadeIn 1s;
+  animation: fadeIn 0.7s;
   position: relative; }
   @media (max-width: 375px) {
     .mob__menu {

@@ -42,7 +42,7 @@ nav {
      }
 }
 .mob__menu {
-    animation: fadeIn 1s;
+    animation: fadeIn 0.7s;
     position: relative;
     @include for-size(phone-only) {    
         display: none; 

@@ -47,10 +47,11 @@ const mdl = document.querySelector('.modal-section');
 const btnn = document.querySelectorAll('.btn--cyan');
 const btnModal = document.querySelectorAll('.btn-modal');
 const btnClose = document.querySelector('.btn--close');
-const productAmount = document.querySelector('.product-amount-1');
+//const productAmount = document.querySelector('.product-amount-1');
 for(var i = 0; i < btnn.length; i++){
     btnn[i].addEventListener('click' , (e) =>{
         var currentElement = e.currentTarget;
+        console.log(currentElement)
         mdl.style.display = 'block';
         var currentData = currentElement.dataset.b;      
         if(currentData){
