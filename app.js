@@ -51,7 +51,6 @@ const btnClose = document.querySelector('.btn--close');
 for(var i = 0; i < btnn.length; i++){
     btnn[i].addEventListener('click' , (e) =>{
         var currentElement = e.currentTarget;
-        console.log(currentElement)
         mdl.style.display = 'block';
         var currentData = currentElement.dataset.b;      
         if(currentData){
@@ -118,19 +117,6 @@ btnSupport.addEventListener('click' , () =>{
         ele.nextElementSibling.style.maxHeight = 0; 
     });
 });
-
-
-//const btnPledge = document.querySelector('.daki');
-//btnPledge.addEventListener('click', () =>{  
-//    var inputFild = document.getElementById('option').value; 
-//    if(inputFild){
-//        app.currentValue = app.currentValue + Number(inputFild);
-//        backedAmount.innerHTML = '$' + formatNumber(app.currentValue);
-//        totalBacker.innerHTML = app.numberOfDonation + 1;
-//    }
-//    progressBar.style.width = (app.currentValue / 100000 ) * 100 + "%";
-//});
-
 const btnP = document.querySelectorAll('.daki');
 const supportModal = document.querySelector('.support');
 for(let i = 0; i < btnP.length ; i++){
@@ -162,7 +148,6 @@ for(let i = 0; i < btnP.length ; i++){
                 }
             });
         }       
-
         if(currentInput) {
             app.currentValue = app.currentValue + Number(currentInput);
             backedAmount.innerHTML = '$' + formatNumber(app.currentValue);
