@@ -1,28 +1,4 @@
-.main-project {
-    width: 53%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    background-color: white;
-    border-radius: 10px;
-    position: relative;
-    transform: translate(0%, -6%);
-    padding: 0 63px 0 63px;
-    h1 {
-        margin-top: 50px;
-        font-size: 1.75em;
-        font-weight: 700;
-        color: var(--Black);
-    }
-    @include for-size(phone-only) {
-        text-align: center;
-        padding: 0 10px;
-        width: 80%;    
-        transform: translate(0%, -2%);
-     }
-}
+
 .main-project--p {
     line-height: 1.8em;
     margin-bottom: 30px;

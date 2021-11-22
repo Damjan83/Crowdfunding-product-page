@@ -1,54 +1,5 @@
 /*------Buttons Style------*/
-.btn {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    @include for-size(phone-only) {
-        justify-content: space-evenly;
-    }
-    @include for-size(tablet-portrait-down) {
-        justify-content: space-evenly;
-    }
-}
-.btn--cyan {
-    height: 3.5rem;
-    width: 11.5rem;
-    border-radius: 30px;
-    border: none;
-    cursor: pointer;
-    font-weight: 700;
-    background-color: var(--Moderate-cyan);
-    color: white;
-}
-.btn--gray {
-    height: 3.5rem;
-    width: 11.5rem;
-    border-radius: 30px;
-    border: none;
-    cursor: pointer;
-    font-weight: 700;
-    background-color: var(--Dark-gray);
-    color: white;
-    @include for-size(phone-only) {
-        margin-top: 20px;
-    }  
-}
-.btn--bookmark {
-    height: 3.5rem;
-    width: 9.5rem;
-    border-radius: 30px;
-    border: 1px solid lightgray;
-    cursor: pointer;
-    padding: 0;
-    color: var(--Black);
-    font-weight: 700;
-    background-image: url(../images/icon-bookmark.svg);
-    background-repeat: no-repeat;
-    @include for-size(phone-only) {
-        font-size: 0;
-        width: 58px;
-    }
-}
+
 .btn--p {
     margin-left: 40px;
 }
