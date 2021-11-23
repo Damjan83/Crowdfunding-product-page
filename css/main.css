@@ -204,14 +204,6 @@ nav {
   color: white;
   font-weight: 700; }
 
-.main-project--p {
-  line-height: 1.8em;
-  margin-bottom: 30px;
-  color: #7A7A7A; }
-
-.mastercraft-img {
-  transform: translate(0%, -50%); }
-
 .counter {
   width: 70%;
   display: flex;
