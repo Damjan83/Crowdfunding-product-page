@@ -2,7 +2,7 @@
 .main-project--p {
     line-height: 1.8em;
     margin-bottom: 30px;
-    color: var(--Dark-gray);
+    color: map-get($color, c-dark-gray);
 }
 .mastercraft-img {
     transform: translate(0%, -50%);

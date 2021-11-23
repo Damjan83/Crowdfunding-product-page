@@ -20,7 +20,7 @@ nav {
         font-size: 1rem;
         font-family: 'Commissioner' , sans-serif;
         font-weight: 400;
-        color: white;
+        color: map-get($color, c-white);
         text-decoration: none;
     }
     ul li a:nth-child(1), a:nth-child(2) {
@@ -33,7 +33,7 @@ nav {
     div {
         width: 25px;
         height: 3px;
-        background-color: white;
+        background-color: map-get($color, c-white);
         margin: 5px;
         transition: all 0.4s ease;
     }
@@ -54,7 +54,7 @@ nav {
     width: 80%;
     height: auto;
     border-radius: 10px;
-    background-color: white;
+    background-color: map-get($color, c-white);
     top: 100px;
     li a {
         display: flex;

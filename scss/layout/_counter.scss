@@ -15,12 +15,12 @@
         font-weight: 700;
     }
     p {
-        color: var(--Dark-gray);
+        color: map-get($color, c-dark-gray);;
     }
 }
 .split-line {
     width: 0.0625rem;
-    background-color: lightgray;
+    background-color: map-get($color, c-split-line);
     @include for-size(phone-only) {
         width: 50%;
         height: 1px;
@@ -29,7 +29,7 @@
 }
 .slidecontainer {
     justify-self: center;
-    background: gainsboro;
+    background: map-get($color, c-gainsboro);
     height: 10px;
     width: 80%;
     border-radius: 5px;
@@ -37,7 +37,7 @@
     overflow: hidden;
     span {
         content: "";
-        background: #3cb4ac;
+        background: map-get($color, c-cyan);
         top: 0;
         left: 0;
         width: 0;

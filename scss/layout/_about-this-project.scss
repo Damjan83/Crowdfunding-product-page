@@ -1,17 +1,17 @@
 .about-this-project {
     width: 100%;
     line-height: 1.8em;
-    color: var(--Dark-gray);
+    color: map-get($color, c-dark-gray);
     h1 {
         margin-bottom: 20px;
     }
-    @include for-size(phone-only) {
+    @include for-size(phone-small) {
         text-align: left;
     }
 }
 .about {
     margin-bottom: 20px;
-    color: var(--Dark-gray);
+    color: map-get($color, c-dark-gray);
     line-height: 1.8em;
 
 }
