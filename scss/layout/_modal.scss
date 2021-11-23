@@ -65,7 +65,7 @@
     color: map-get($color, c-cyan);
 }
 .modal-no-reward, .modal-bamboo, .modal-black, .modal-mahogany {
-    border: 1px solid gainsboro;
+    border: 1px solid map-get($color, c-gainsboro);
     padding: 20px 12px;
     border-radius: 10px;
     margin-top: 20px;
