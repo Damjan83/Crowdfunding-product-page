@@ -2,7 +2,7 @@ input[type=radio] {
 	-webkit-appearance: none;
 	appearance: none;
 	background: map-get($color, c-white);
-	border: 1px solid map-get($color, c-gainsboro);
+	border: 1px solid map-get($color, c-dark-gray);
 	height: 1.5em;
 	width: 1.5em;
 	display: inline-block;

@@ -22,14 +22,17 @@
     
     &--bookmark {
         width: 55px;
-        background-image: url(../images/icon-bookmark.svg);
+        display: flex;
+        align-items: center;
         background-repeat: no-repeat;
-
-
+        background-color: map-get($color , c-white);
+        &.active {
+            color: map-get($color, c-dark-cyan);
+        }
         @include for-size(phone-large) {
             height: 3.5rem;
             width: 9.5rem;
-            border: 1px solid lightgray;
+            border: 1px solid map-get($color, c-gainsboro);
             padding: 0;
             color: map-get($color, c-black);
             font-weight: 700;
@@ -42,11 +45,20 @@
     }
 }
 
+.btn--bookmark-img {
+    display: block;
+    padding: 0;
+    &--booked {
+        display: none;
+        padding: 0;
+    }
+}
+
 .btn--bookmark__text {
     display: none;
 
     @include for-size(phone-large) {
         display: block;
-        margin-left: 40px;
+        margin-left: 10px;
     }
 }

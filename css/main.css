@@ -30,13 +30,17 @@
     color: #fff; }
   .btn--bookmark {
     width: 55px;
-    background-image: url(../images/icon-bookmark.svg);
-    background-repeat: no-repeat; }
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-color: #fff; }
+    .btn--bookmark.active {
+      color: #147B74; }
     @media (min-width: 768px) {
       .btn--bookmark {
         height: 3.5rem;
         width: 9.5rem;
-        border: 1px solid lightgray;
+        border: 1px solid #dcdcdc;
         padding: 0;
         color: #000;
         font-weight: 700; } }
@@ -44,12 +48,19 @@
     background-color: #147B74;
     color: #fff; }
 
+.btn--bookmark-img {
+  display: block;
+  padding: 0; }
+  .btn--bookmark-img--booked {
+    display: none;
+    padding: 0; }
+
 .btn--bookmark__text {
   display: none; }
   @media (min-width: 768px) {
     .btn--bookmark__text {
       display: block;
-      margin-left: 40px; } }
+      margin-left: 10px; } }
 
 .header {
   width: 100%;
@@ -236,7 +247,7 @@
   font-size: 1.3em; }
 
 .product__price {
-  color: #7A7A7A;
+  color: #3cb4ac;
   margin: 20px 0 30px 0;
   line-height: 1.8em; }
 
@@ -244,6 +255,14 @@
   display: flex;
   align-items: center;
   justify-content: center; }
+
+.product__amount-lenght {
+  font-size: 1.3em;
+  font-weight: 700;
+  margin-right: 0.1875rem; }
+
+.product__amount-left {
+  font-size: 0.875rem; }
 
 .donation {
   width: 100%;
@@ -472,7 +491,7 @@ input[type=radio] {
   -webkit-appearance: none;
   appearance: none;
   background: #fff;
-  border: 1px solid #dcdcdc;
+  border: 1px solid #7A7A7A;
   height: 1.5em;
   width: 1.5em;
   display: inline-block;
@@ -529,7 +548,7 @@ input[type=radio] {
   padding: 1.25rem 1rem 1.25rem 2.2rem;
   border-radius: 30px;
   width: 100px;
-  border: 1px solid #dcdcdc;
+  border: 2px solid #dcdcdc;
   text-align: center; }
   .accordion-panel__input:focus {
     outline: 0; }
@@ -557,8 +576,8 @@ input[type=radio] {
   line-height: 1.8em; }
 
 .product__text-content {
-  color: #3cb4ac;
-  margin: 0; }
+  color: #7A7A7A;
+  margin: 0 0 20px 0; }
 
 .mahogany-edition {
   opacity: 0.5;

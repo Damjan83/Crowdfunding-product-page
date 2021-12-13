@@ -34,3 +34,24 @@ btnClose.addEventListener('click', () => {
     mdl.style.display = 'none';
 });
 
+/*------Bookmarked------*/
+const btnBookmark = document.querySelector('.btn--bookmark');
+const btnBookmarkText = document.querySelector('.btn--bookmark__text');
+const btnBookmarkImg = document.querySelector('.btn--bookmark-img');
+const btnBookmarkImgBooked = document.querySelector('.btn--bookmark-img--booked');
+btnBookmark.addEventListener('click' , () => {
+  btnBookmark.classList.add('active');
+  btnBookmarkImg.style.display = 'none';
+  btnBookmarkImgBooked.style.display = 'block';
+  btnBookmarkText.textContent ='Bookmarked';
+});
+/*------Countdown days------*/
+const countDownDate = new Date("Jan 1, 2022 10:25:25").getTime();
+const x = setInterval( () => {
+    const now = new Date().getTime();
+    const distance = countDownDate - now;
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const daysElement = document.getElementById('days_left');
+    daysElement.innerHTML = days;
+    if(distance < 0) clearInterval(x);
+}, 1000);
