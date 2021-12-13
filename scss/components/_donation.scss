@@ -1,0 +1,65 @@
+.donation {
+    width: 100%;
+    display: flex;
+    margin-bottom: 25px;
+    flex-direction: column;
+
+    @include for-size(phone-large) {
+        flex-direction: row;
+    }
+}
+
+.donation__item {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+
+    @include for-size(phone-large) {
+        width: 33.33%;
+        border-right: 1px solid map-get($color, c-gainsboro);
+
+        padding-left: 30px;
+
+        &:nth-child(1) {
+            padding-left: 0;
+        }
+    
+        &:last-child {
+            border: none;
+        }
+    }
+}
+
+.donation__item-header {
+    margin-bottom: 10px;
+}
+
+.donation__current-amount, #total_backer, #days_left {
+    font-size: 2em;
+    font-weight: 700;
+}
+#donation__target-amount, .donation__backer-total, .donation__days-left {
+    color: map-get($color, c-dark-gray);
+}
+
+
+.donation__progress-bar {
+    justify-self: center;
+    background: map-get($color, c-gainsboro);
+    height: 10px;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.donation__progress-bar--filed {
+    background: map-get($color, c-cyan);
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 10px;
+    position: absolute;
+    border-radius: 5px;
+}

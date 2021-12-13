@@ -1,47 +1,8 @@
-.project-stand {
-    width: 100%;
-    margin-top: 20px;
-    border: 1px solid map-get($color, c-gainsboro);
-    padding: 1rem;
-    border-radius: 10px;
-    p {
-        color: map-get($color, c-dark-gray);
-        margin: 20px 0 30px 0;
-        line-height: 1.8em;
-    }
-    @include for-size(phone-only) {
-        text-align: left;
-    }
-}
-.h1-left {
-    display: flex;
-    align-items: center;
-    h1 {
-        margin-right: 5px;
-    }
-}
-.project-header, .project-footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    h1 {
-        display: flex;
-        align-items: center;
-        margin-top: 0;
-    }
-    p {
-        color: map-get($color, c-cyan);
-        margin: 0;
-    }
-    @include for-size(phone-only) {
-        display: block;
-        .h1-small {
-            font-size: 1.3em;
-        }
-        .h1-left {
-            margin-bottom: 20px;
-        }
-    } 
+
+
+.product__text-content {
+    color: map-get($color, c-cyan);
+    margin: 0;
 }
 
 .mahogany-edition {
@@ -51,7 +12,7 @@
         margin: 20px 0 30px 0;
         line-height: 1.8em;
     }
-    @include for-size(phone-only) {
+    @include for-size(phone-small) {
         text-align: left;
     }
 }

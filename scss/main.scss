@@ -6,14 +6,23 @@
 @import 'scss/layout/_container';
 
 @import 'scss/components/_button';
-
-
-@import 'scss/layout/_header';
+@import 'scss/components/_header';
+@import 'scss/components/_navigation';
+@import 'scss/components/_text';
 @import 'scss/components/_button&slider';
-@import 'scss/layout/_counter';
+@import 'scss/components/_images';
+@import 'scss/components/_product';
+@import 'scss/components/_donation';
+@import 'scss/components/_card';
+@import 'scss/components/_modal';
+@import 'scss/components/_form';
+@import 'scss/components/_accordion';
+
+
+
 @import 'scss/layout/_about-this-project';
 @import 'scss/layout/_project-stand';
-@import 'scss/layout/_modal';
+
 @import 'scss/layout/_modal-pledge';
 @import 'scss/layout/_support';
 
@@ -43,6 +52,7 @@ html {
 body {
     font-size: 16px;
     font-family: 'Commissioner' , sans-serif;
+    background-color: map-get($color, c-gray);
 }
 
 

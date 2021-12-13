@@ -21,23 +21,32 @@
     }
     
     &--bookmark {
-        height: 3.5rem;
-        width: 9.5rem;
-        border: 1px solid lightgray;
-        padding: 0;
-        color: map-get($color, c-black);
-        font-weight: 700;
+        width: 55px;
         background-image: url(../images/icon-bookmark.svg);
         background-repeat: no-repeat;
 
+
         @include for-size(phone-large) {
-            font-size: 0;
-            width: 58px;
+            height: 3.5rem;
+            width: 9.5rem;
+            border: 1px solid lightgray;
+            padding: 0;
+            color: map-get($color, c-black);
+            font-weight: 700;
         }
     }
 
     &:hover {
         background-color: map-get($color, c-dark-cyan);
+        color: map-get($color, c-white);
     }
 }
 
+.btn--bookmark__text {
+    display: none;
+
+    @include for-size(phone-large) {
+        display: block;
+        margin-left: 40px;
+    }
+}

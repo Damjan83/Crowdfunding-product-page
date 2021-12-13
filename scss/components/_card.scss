@@ -1,0 +1,40 @@
+.card {
+    border-radius: 10px;
+    padding: 45px 35px 35px;
+    margin-bottom: 15px;
+    border: 1px solid map-get($color, c-gray);
+    background-color: map-get($color, c-white);
+
+}
+
+
+.card__title {
+    font-size: 1.75em;
+    font-weight: 700;
+    color: map-get($color , c-black);
+    margin-bottom: 15px;
+ 
+    &--center {
+        text-align: center;
+    }
+}
+
+.card__logo {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.card_desc {
+    margin-bottom: 30px;
+
+    &--center {
+        text-align: center;
+    }
+}
+
+.card__action {
+    display: flex;
+    justify-content: space-between;
+}

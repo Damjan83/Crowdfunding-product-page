@@ -1,0 +1,51 @@
+.accordion {}
+
+.accordion-panel {
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+
+
+    &.is-active {
+        border-right: 1px solid #3cb4ac;
+        border-left: 1px solid #3cb4ac;
+        border-bottom: 1px solid #3cb4ac;
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+.accordion-panel__inner {
+    padding: 25px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion-panel__text {
+    color: map-get($color, c-dark-gray);
+}
+
+.accordion-panel__btns {
+    position: relative;
+    text-align: center;
+}
+
+.accordion-panel__input {
+    padding: 1.25rem 1rem 1.25rem 2.2rem;
+    border-radius: 30px;
+    width: 100px;
+    border: 1px solid map-get($color, c-gainsboro);
+    text-align: center;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+.accordion-panel__currency {
+    position: absolute;
+    left: 25px;
+    top: 18px;
+    font-size: 15px;
+}

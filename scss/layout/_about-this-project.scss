@@ -1,17 +1,17 @@
-.about-this-project {
+.about {
     width: 100%;
     line-height: 1.8em;
     color: map-get($color, c-dark-gray);
-    h1 {
-        margin-bottom: 20px;
-    }
+    
     @include for-size(phone-small) {
         text-align: left;
     }
 }
-.about {
+.about__title {
+    margin-bottom: 20px;
+}
+.about-desc {
     margin-bottom: 20px;
     color: map-get($color, c-dark-gray);
     line-height: 1.8em;
-
 }
