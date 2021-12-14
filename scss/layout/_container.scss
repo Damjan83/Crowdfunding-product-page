@@ -2,12 +2,13 @@
     width: 100%;
     height: auto;
     margin: 0 auto;
-    transform: translate(0%, -6%);
+    transform: translate(0%, -2.5%);
     max-width: map-get($app, container-main);
     width: 90%;
     border-radius: 10px;
 
     @include for-size(phone-large) {
         width: 100%;
+        transform: translate(0%, -6%);
     }
 }

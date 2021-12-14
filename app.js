@@ -34,6 +34,14 @@ btnClose.addEventListener('click', () => {
     mdl.style.display = 'none';
 });
 
+/*------Burger and mobile menu------*/
+const burger = document.querySelector('.main-nav__burger');
+const nav = document.querySelector('.main-nav__menu');
+burger.addEventListener('click' , () => {
+    nav.classList.toggle('is-active');
+    burger.classList.toggle('is-active');
+});
+
 /*------Bookmarked------*/
 const btnBookmark = document.querySelector('.btn--bookmark');
 const btnBookmarkText = document.querySelector('.btn--bookmark__text');

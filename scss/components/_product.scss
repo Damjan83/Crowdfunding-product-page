@@ -13,10 +13,14 @@
         text-align: left;
     }
 }
-.product__header, .product__footer{
-    display: flex;
+.product__header, .product__footer {
+    display: block;
     justify-content: space-between;
     align-items: center;
+    @include for-size(phone-large) {    
+        display: flex; 
+        margin-bottom: 20px;
+     }
 
 }
 .product__title {
@@ -26,11 +30,18 @@
     color: map-get($color, c-cyan);
     margin: 20px 0 30px 0;
     line-height: 1.8em;
+    @include for-size(phone-large) {    
+        margin: 0;
+     }
 }
 .product__amount {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+    margin-bottom: 0.9375rem;
+    @include for-size(phone-large) {    
+        justify-content: center; 
+     }
 }
 .product__amount-lenght {
     font-size: 1.3em;

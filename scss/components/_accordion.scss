@@ -1,5 +1,3 @@
-.accordion {}
-
 .accordion-panel {
     background-color: #fff;
     max-height: 0;
@@ -16,19 +14,32 @@
 }
 
 .accordion-panel__inner {
-    padding: 25px 20px;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: space-between;
+    @include for-size(phone-large) {    
+        padding: 25px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+     }
 }
 
 .accordion-panel__text {
-    color: map-get($color, c-dark-gray);
+    text-align: center;
+    margin-bottom: 20px;
+    @include for-size(phone-large) {
+        color: map-get($color, c-dark-gray);
+    }  
 }
 
 .accordion-panel__btns {
-    position: relative;
-    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    @include for-size(phone-large) {
+        position: relative;
+        text-align: center;
+    }
 }
 
 .accordion-panel__input {

@@ -26,6 +26,7 @@
         align-items: center;
         background-repeat: no-repeat;
         background-color: map-get($color , c-white);
+        padding: 0;
         &.active {
             color: map-get($color, c-dark-cyan);
         }

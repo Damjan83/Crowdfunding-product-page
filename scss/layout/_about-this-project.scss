@@ -8,10 +8,12 @@
     }
 }
 .about__title {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
+    color: map-get($color, c-black);
 }
-.about-desc {
-    margin-bottom: 20px;
+.about__desc {
+    font-size: 0.95em;
+    margin-bottom: 1.25rem;
     color: map-get($color, c-dark-gray);
     line-height: 1.8em;
 }

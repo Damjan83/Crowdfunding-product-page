@@ -93,7 +93,11 @@
 
 .modal-body__content-title {
     font-size: 1.1em;
-    margin: 0 0 10px 0;
+    margin: 0 10px 10px 0;
+    @include for-size(phone-large) {    
+        font-size: 1.1em;
+        margin: 0 0 10px 0;
+    }
 }
 
 .modal-body__content-header {
@@ -101,17 +105,32 @@
     width: 100%;
     justify-content: space-between;
 }
-
+.modal-body__content-value {
+    display: none;
+    @include for-size(phone-large) {    
+        display: block;
+    }
+}
+.modal-body__content-value--mob {
+    display: block;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 1.25rem;
+    @include for-size(phone-large) {    
+        display: none;
+    }
+}
 .modal-body__content-desc {
-    margin-left: 10px;
+    margin: 5px 0 0 0;
     color: map-get($color, c-cyan);
-
-    @include for-size(phone-only) {    
-        margin: 0; 
+    display: inline-block;
+    @include for-size(phone-large) {    
+        margin-left: 10px;
     }
 }
 
 .modal-body__content-text {
+    color: map-get($color, c-dark-gray);
     font-size: 14px;
     line-height: 25px;
 }

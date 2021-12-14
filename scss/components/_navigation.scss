@@ -6,6 +6,8 @@
     left: 50%;
     max-width: 1160px;
     transform: translate(-50%, 0%);
+    justify-content: space-between;
+    align-items: center;
 }
 .main-nav__logo {
     height: 100%;
@@ -22,8 +24,7 @@
         border-radius: 10px;
         background-color: map-get($color, c-white);
         top: 100px;
-        justify-content: center;
-        text-align: center;
+        text-align: left;
         display: flex;
         @include for-size(phone-large) {    
             display: none; 
@@ -47,6 +48,7 @@
         padding-right: 0;
     }
     .is-active & {
+        font-size: 1rem;
         display: flex;
         flex-direction: column;
         color: black;
