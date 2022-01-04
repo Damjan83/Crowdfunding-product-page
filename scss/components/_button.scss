@@ -8,16 +8,13 @@
     font-weight: 700;
     color: map-get($color, c-white);
 
-    &--cyan {
-        background-color: map-get($color, c-cyan);
+    &:hover {
+        background-color: map-get($color, c-dark-cyan);
+        color: map-get($color, c-white);
     }
 
-    &--disabled {
-        border: none;
-        cursor: pointer;
-        font-weight: 700;
-        background-color: map-get($color, c-dark-gray);
-        color: map-get($color, c-white);
+    &--cyan {
+        background-color: map-get($color, c-cyan);
     }
     
     &--bookmark {
@@ -27,9 +24,11 @@
         background-repeat: no-repeat;
         background-color: map-get($color , c-white);
         padding: 0;
+
         &.active {
             color: map-get($color, c-dark-cyan);
         }
+        
         @include for-size(phone-large) {
             height: 3.5rem;
             width: 9.5rem;
@@ -40,9 +39,17 @@
         }
     }
 
-    &:hover {
-        background-color: map-get($color, c-dark-cyan);
+    
+    &--disabled {
+        border: none;
+        cursor: initial;
+        font-weight: 700;
+        background-color: map-get($color, c-dark-gray);
         color: map-get($color, c-white);
+
+        &:hover {
+            background-color: map-get($color, c-dark-gray);
+        }
     }
 }
 

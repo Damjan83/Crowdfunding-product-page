@@ -21,14 +21,11 @@
   cursor: pointer;
   font-weight: 700;
   color: #fff; }
+  .btn:hover {
+    background-color: #147B74;
+    color: #fff; }
   .btn--cyan {
     background-color: #3cb4ac; }
-  .btn--disabled {
-    border: none;
-    cursor: pointer;
-    font-weight: 700;
-    background-color: #7A7A7A;
-    color: #fff; }
   .btn--bookmark {
     width: 55px;
     display: flex;
@@ -46,9 +43,14 @@
         padding: 0;
         color: #000;
         font-weight: 700; } }
-  .btn:hover {
-    background-color: #147B74;
+  .btn--disabled {
+    border: none;
+    cursor: initial;
+    font-weight: 700;
+    background-color: #7A7A7A;
     color: #fff; }
+    .btn--disabled:hover {
+      background-color: #7A7A7A; }
 
 .btn--bookmark-img {
   display: block;
