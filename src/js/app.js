@@ -1,3 +1,8 @@
+import person from './components/test' 
+
+
+console.log(person())
+
 const accr = document.getElementsByClassName('accordion');
 const backedAmount = document.getElementById('backed_amount');
 const progressBar = document.getElementById('donation__progress-bar--filed');
@@ -6,7 +11,6 @@ const targetValueEle = document.getElementById('donation__target-amount');
 const btnPledge = document.querySelectorAll('.btn-pledge');
 const modalConfirm = document.querySelector('.modal--confirm');
 const mdl = document.querySelector('.modal');
-const btnCyan = document.querySelectorAll('.btn--cyan');
 const btnModal = document.querySelectorAll('.btn-modal');
 const btnClose = document.querySelector('.modal-header__close');
 const burger = document.querySelector('.main-nav__burger');
@@ -70,9 +74,19 @@ for (let i = 0; i < btnPledge.length; i++) {
     });
 }
 
-for(var i = 0; i < btnCyan.length; i++){
-    btnCyan[i].addEventListener('click' , (e) =>{
+for(var i = 0; i < btnModal.length; i++){
+    btnModal[i].addEventListener('click' , (e) =>{
+        const currentElement = e.currentTarget;
         mdl.style.display = 'block';
+        const currentData = currentElement.dataset.b;
+
+        if(currentData){
+            const currentModalEle = document.querySelector("." + currentData);
+            const accEle = currentModalEle.querySelector('.accordion')
+            const inputEle = accEle.querySelector('.texts')
+
+            inputEle.click();
+        }          
     });
 }
 
@@ -81,9 +95,19 @@ burger.addEventListener('click' , () => {
     burger.classList.toggle('is-active');
 });
 
-
 btnClose.addEventListener('click', () => {
     mdl.style.display = 'none';
+    document.querySelectorAll('.modal-body__item').forEach(ele => {
+        const accEle = ele.querySelector('.accordion')
+        const inputEle = accEle.querySelector('.texts')
+
+        if(inputEle) inputEle.checked = false;
+
+        ele.querySelector('.accordion').classList.remove('is-active');
+        ele.classList.remove('is-active');
+        ele.nextElementSibling.classList.remove('is-active');
+        ele.nextElementSibling.style.maxHeight = 0;
+    });
 });
 
 btnBookmark.addEventListener('click' , () => {
@@ -103,7 +127,7 @@ const x = setInterval( () => {
 }, 1000);
 
 function closeAccordions() {
-    for (j = 0; j < accr.length; j++) {
+    for (let j = 0; j < accr.length; j++) {
         accr[j].classList.remove('is-active');
         accr[j].parentNode.classList.remove('is-active');
         accr[j].parentNode.nextElementSibling.classList.remove('is-active');
@@ -115,7 +139,6 @@ function closeAccordions() {
 function formatNumber(num){
     return num.toLocaleString('en-US');
 };
-
 
 function updateApp() {
     backedAmount.innerHTML = '$' + formatNumber(app.currentValue);

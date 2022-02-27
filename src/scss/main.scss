@@ -1,0 +1,57 @@
+@import 'base/config';
+@import 'base/fonts';
+@import 'config/_mediaQueries';
+
+@import 'layout/_container';
+
+@import 'components/_button';
+@import 'components/_header';
+@import 'components/_navigation';
+@import 'components/_text';
+@import 'components/_button&slider';
+@import 'components/_images';
+@import 'components/_product';
+@import 'components/_donation';
+@import 'components/_card';
+@import 'components/_modal';
+@import 'components/_form';
+@import 'components/_accordion';
+
+
+
+@import 'layout/_about-this-project';
+@import 'layout/_project-stand';
+
+@import 'layout/_modal-pledge';
+@import 'layout/_support';
+
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+body {
+    font-size: 16px;
+    font-family: 'Commissioner' , sans-serif;
+    //background-color: map-get($color, c-gray);
+}
+
+

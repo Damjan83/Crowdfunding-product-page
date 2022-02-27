@@ -42,6 +42,9 @@
     }
 }
 
+.accordion-panel__input-currency {
+    position: relative;
+}
 .accordion-panel__input {
     padding: 1.25rem 1rem 1.25rem 2.2rem;
     border-radius: 30px;
@@ -52,11 +55,12 @@
     &:focus {
         outline: 0;
     }
+
 }
 
 .accordion-panel__currency {
     position: absolute;
     left: 25px;
-    top: 18px;
+    top: 20px;
     font-size: 15px;
 }
