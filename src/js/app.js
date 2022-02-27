@@ -14,6 +14,7 @@ const btnBookmark = document.querySelector('.btn--bookmark');
 const btnBookmarkText = document.querySelector('.btn--bookmark__text');
 const btnBookmarkImg = document.querySelector('.btn--bookmark-img');
 const btnBookmarkImgBooked = document.querySelector('.btn--bookmark-img--booked');
+const btnSupport = document.querySelector('.btn--support');
 const countDownDate = new Date("Jan 1, 2023 10:25:25").getTime();
 const overlay = document.querySelector('.overlay');
 
@@ -63,9 +64,9 @@ for (let i = 0; i < btnPledge.length; i++) {
 
         modalConfirm.style.display = 'block'
 
-        setTimeout(function() {
+        /*setTimeout(function() {
             modalConfirm.style.display = 'none'
-        }, 3000);
+        }, 3000);*/
 
     });
 }
@@ -112,6 +113,14 @@ btnBookmark.addEventListener('click' , () => {
     btnBookmarkImg.style.display = 'none';
     btnBookmarkImgBooked.style.display = 'block';
     btnBookmarkText.textContent ='Bookmarked';
+});
+
+btnSupport.addEventListener('click', () => {
+    modalConfirm.style.display = 'none';
+});
+
+mdl.addEventListener('click', () => {
+    mdl.style.display = 'none';
 });
 
 const x = setInterval( () => {
