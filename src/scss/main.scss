@@ -51,7 +51,8 @@ html {
 body {
     font-size: 16px;
     font-family: 'Commissioner' , sans-serif;
-    //background-color: map-get($color, c-gray);
 }
-
+ .wraper {
+   position: relative;
+ }
 

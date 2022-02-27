@@ -27,6 +27,7 @@
 
         &.active {
             color: map-get($color, c-dark-cyan);
+            pointer-events: none;
         }
         
         @include for-size(phone-large) {
@@ -36,7 +37,8 @@
             padding: 0;
             color: map-get($color, c-black);
             font-weight: 700;
-        }
+        }     
+
     }
 
     
@@ -68,5 +70,9 @@
     @include for-size(phone-large) {
         display: block;
         margin-left: 10px;
+    }
+
+    &:hover {
+        background-color: map-get($color, c-dark-cyan);
     }
 }

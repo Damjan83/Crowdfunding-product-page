@@ -21,6 +21,8 @@ const btnBookmarkImg = document.querySelector('.btn--bookmark-img');
 const btnBookmarkImgBooked = document.querySelector('.btn--bookmark-img--booked');
 const countDownDate = new Date("Jan 1, 2023 10:25:25").getTime();
 
+const overlay = document.querySelector('.overlay');
+
 let app = {
     targetValue: 100000,
     currentValue: 89914,
@@ -93,6 +95,7 @@ for(var i = 0; i < btnModal.length; i++){
 burger.addEventListener('click' , () => {
     nav.classList.toggle('is-active');
     burger.classList.toggle('is-active');
+    overlay.classList.toggle('is-active');
 });
 
 btnClose.addEventListener('click', () => {
@@ -148,3 +151,5 @@ function updateApp() {
 }
 
 updateApp();
+
+
