@@ -65,7 +65,7 @@ for (let i = 0; i < btnPledge.length; i++) {
 
         setTimeout(function() {
             modalConfirm.style.display = 'none'
-        }, 30000);
+        }, 3000);
 
     });
 }

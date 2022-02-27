@@ -142,9 +142,10 @@
     cursor: pointer;
     background-color: map-get($color , c-cyan);
     font-weight: 700;
+    margin-bottom: 0.625rem;
 
     &__text {
-        color: map-get($color , c-black);
+        color: map-get($color , c-white);
         margin: 0;
     }
 }

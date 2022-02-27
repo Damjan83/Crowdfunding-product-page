@@ -16,15 +16,15 @@
     text-align: center;
     z-index: 2;
 
-    img {
+    &__img {
         margin: 0.9375rem 0 0.9375rem 0;
     }
 
-    h1 {
+    &__title {
         margin-bottom: 0.9375rem;
     }
 
-    p {
+    &__text {
         line-height: 1.8em;
         margin-bottom: 0.9375rem;
     }
