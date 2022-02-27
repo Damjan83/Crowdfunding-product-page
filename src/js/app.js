@@ -1,8 +1,3 @@
-import person from './components/test' 
-
-
-console.log(person())
-
 const accr = document.getElementsByClassName('accordion');
 const backedAmount = document.getElementById('backed_amount');
 const progressBar = document.getElementById('donation__progress-bar--filed');
@@ -20,7 +15,6 @@ const btnBookmarkText = document.querySelector('.btn--bookmark__text');
 const btnBookmarkImg = document.querySelector('.btn--bookmark-img');
 const btnBookmarkImgBooked = document.querySelector('.btn--bookmark-img--booked');
 const countDownDate = new Date("Jan 1, 2023 10:25:25").getTime();
-
 const overlay = document.querySelector('.overlay');
 
 let app = {
@@ -71,7 +65,7 @@ for (let i = 0; i < btnPledge.length; i++) {
 
         setTimeout(function() {
             modalConfirm.style.display = 'none'
-        }, 3000);
+        }, 30000);
 
     });
 }

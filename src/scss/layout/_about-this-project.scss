@@ -7,10 +7,12 @@
         text-align: left;
     }
 }
+
 .about__title {
     margin-bottom: 1.25rem;
     color: map-get($color, c-black);
 }
+
 .about__desc {
     font-size: 0.95em;
     margin-bottom: 1.25rem;

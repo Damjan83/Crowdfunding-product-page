@@ -1,17 +1,17 @@
-
-
 .product__text-content {
     color: map-get($color, c-dark-gray);
-    margin: 0 0 20px 0;
+    margin: 0 0 1.25rem 0;
 }
 
 .mahogany-edition {
     opacity: 0.5;
-    padding: 16px;
+    padding: 1rem;
+
     p {
-        margin: 20px 0 30px 0;
+        margin: 1.25rem 0 1.875rem 0;
         line-height: 1.8em;
     }
+    
     @include for-size(phone-small) {
         text-align: left;
     }

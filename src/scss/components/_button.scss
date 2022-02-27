@@ -2,7 +2,7 @@
     height: auto;
     width: auto;
     padding: 1.25rem 1.5625rem;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     border: none;
     cursor: pointer;
     font-weight: 700;
@@ -18,7 +18,7 @@
     }
     
     &--bookmark {
-        width: 55px;
+        width: 3.4375rem;
         display: flex;
         align-items: center;
         background-repeat: no-repeat;
@@ -33,14 +33,13 @@
         @include for-size(phone-large) {
             height: 3.5rem;
             width: 9.5rem;
-            border: 1px solid map-get($color, c-gainsboro);
+            border: 0.0625rem solid map-get($color, c-gainsboro);
             padding: 0;
             color: map-get($color, c-black);
             font-weight: 700;
         }     
 
     }
-
     
     &--disabled {
         border: none;
@@ -58,10 +57,35 @@
 .btn--bookmark-img {
     display: block;
     padding: 0;
+
     &--booked {
         display: none;
         padding: 0;
     }
+}
+
+/*------Buttons Style------*/
+.btn--close {
+    color: #ccc;
+    height: 1.25rem;
+    font-size: 1.875rem;
+    border: none;
+    background-color: transparent;
+}
+
+.btn--close:hover, .btn--close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*------Activ class------ */
+.bookmarked {
+    color: var(--Dark-cyan);
+}
+
+.bookmarked--img {
+    background-image: url(../images/icon-bookmarked.svg);
 }
 
 .btn--bookmark__text {
@@ -69,10 +93,58 @@
 
     @include for-size(phone-large) {
         display: block;
-        margin-left: 10px;
+        margin-left: 0.625rem;
     }
 
     &:hover {
         background-color: map-get($color, c-dark-cyan);
+    }
+}
+
+/*------Pledge button and input------*/
+.btn--pledge {
+    height: 3rem;
+    width: 7.5rem;
+    border-radius: 1.875rem;
+    border: none;
+    cursor: pointer;
+    background-color: var(--Moderate-cyan);
+    color: white;
+    font-weight: 700;
+}
+
+.btn--pledge.active {
+    background-color: var(--Dark-gray);
+    opacity: 0.5;
+}
+
+#option0 {
+    height: 2rem;
+    width: 16.5rem;
+    border-radius: 1.875rem;
+    border: 0.0625rem solid map-get($color , c-gainsboro);
+    cursor: pointer;
+}
+
+#option, #option0, #option1, #option2 {
+    height: 2rem;
+    width: 7.5rem;
+    border-radius: 1.875rem;
+    border: 0.0625rem solid map-get($color , c-gainsboro);
+    cursor: pointer;
+}
+
+.btn--support {
+    height: 3rem;
+    width: 6rem;
+    border-radius: 1.875rem;
+    border: none;
+    cursor: pointer;
+    background-color: map-get($color , c-cyan);
+    font-weight: 700;
+
+    &__text {
+        color: map-get($color , c-black);
+        margin: 0;
     }
 }

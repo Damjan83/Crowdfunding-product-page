@@ -1,15 +1,15 @@
+//Base
 @import 'base/config';
 @import 'base/fonts';
+
+//Config
 @import 'config/_mediaQueries';
 
-@import 'layout/_container';
-
+//Component
 @import 'components/_button';
 @import 'components/_header';
 @import 'components/_navigation';
-@import 'components/_text';
-@import 'components/_button&slider';
-@import 'components/_images';
+@import 'components/_slider';
 @import 'components/_product';
 @import 'components/_donation';
 @import 'components/_card';
@@ -17,12 +17,10 @@
 @import 'components/_form';
 @import 'components/_accordion';
 
-
-
+//Layout
+@import 'layout/_container';
 @import 'layout/_about-this-project';
 @import 'layout/_project-stand';
-
-@import 'layout/_modal-pledge';
 @import 'layout/_support';
 
 

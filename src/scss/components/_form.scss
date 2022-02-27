@@ -2,7 +2,7 @@ input[type=radio] {
 	-webkit-appearance: none;
 	appearance: none;
 	background: map-get($color, c-white);
-	border: 1px solid map-get($color, c-dark-gray);
+	border: 0.0625rem solid map-get($color, c-dark-gray);
 	height: 1.5em;
 	width: 1.5em;
 	display: inline-block;
@@ -30,12 +30,12 @@ input[type=radio] {
 	}
 
     &:checked {
-        border: 1px solid map-get($color, c-cyan);
+        border: 0.0625rem solid map-get($color, c-cyan);
     
         &:before {
-            border: 6px solid transparent;
+            border: 0.375rem solid transparent;
             border-radius: 100%;
-            outline-offset: -6px;
+            outline-offset: -0.375rem;
             background: map-get($color, c-cyan);
         }
     }

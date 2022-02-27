@@ -1,9 +1,9 @@
 .product {
     width: 100%;
-    margin-top: 20px;
-    border: 1px solid map-get($color, c-gainsboro);
+    margin-top: 1.25rem;
+    border: 0.0625rem solid map-get($color, c-gainsboro);
     padding: 1rem;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 
     &.is-disabled {
         opacity: 0.5;
@@ -13,27 +13,31 @@
         text-align: left;
     }
 }
+
 .product__header, .product__footer {
     display: block;
     justify-content: space-between;
     align-items: center;
     @include for-size(phone-large) {    
         display: flex; 
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
      }
 
 }
+
 .product__title {
     font-size: 1.3em;
 }
+
 .product__price {
     color: map-get($color, c-cyan);
-    margin: 20px 0 30px 0;
+    margin: 1.25rem 0 30px 0;
     line-height: 1.8em;
     @include for-size(phone-large) {    
         margin: 0;
      }
 }
+
 .product__amount {
     display: flex;
     align-items: center;
@@ -43,11 +47,13 @@
         justify-content: center; 
      }
 }
+
 .product__amount-lenght {
     font-size: 1.3em;
     font-weight: 700;
     margin-right: 0.1875rem;
 }
+
 .product__amount-left {
     font-size: 0.875rem;
 }

@@ -1,8 +1,8 @@
 .card {
-    border-radius: 10px;
-    padding: 45px 35px 35px;
-    margin-bottom: 15px;
-    border: 1px solid map-get($color, c-gray);
+    border-radius: 0.625rem;
+    padding: 2.8125rem 2.1875rem 2.1875rem;
+    margin-bottom: 0.9375rem;
+    border: 0.0625rem solid map-get($color, c-gray);
     background-color: map-get($color, c-white);
 
 }
@@ -12,7 +12,7 @@
     font-size: 1.75em;
     font-weight: 700;
     color: map-get($color , c-black);
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
  
     &--center {
         text-align: center;
@@ -27,7 +27,7 @@
 }
 
 .card_desc {
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 
     &--center {
         text-align: center;

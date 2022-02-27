@@ -1,7 +1,7 @@
 .donation {
     width: 100%;
     display: flex;
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
     flex-direction: column;
 
     @include for-size(phone-large) {
@@ -18,9 +18,9 @@
 
     @include for-size(phone-large) {
         width: 33.33%;
-        border-right: 1px solid map-get($color, c-gainsboro);
+        border-right: 0.0625rem solid map-get($color, c-gainsboro);
 
-        padding-left: 30px;
+        padding-left: 1.875rem;
 
         &:nth-child(1) {
             padding-left: 0;
@@ -33,7 +33,7 @@
 }
 
 .donation__item-header {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .donation__current-amount, #total_backer, #days_left {
@@ -48,18 +48,19 @@
 .donation__progress-bar {
     justify-self: center;
     background: map-get($color, c-gainsboro);
-    height: 10px;
+    height: 0.625rem;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     position: relative;
     overflow: hidden;
 }
+
 .donation__progress-bar--filed {
     background: map-get($color, c-cyan);
     top: 0;
     left: 0;
     width: 0;
-    height: 10px;
+    height: 0.625rem;
     position: absolute;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
 }

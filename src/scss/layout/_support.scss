@@ -1,31 +1,37 @@
 .support {
     position: relative;
-    display: block;
-    top: 200px;
-    width: 500px;
-    height: 300px;
+    display: flex;
+    flex-direction: column;
+    top: 12.5rem;
+    width: 100%;
+    max-width: 31.25rem;
+    height: auto;
     background-color: map-get($color, c-white);
-    border-radius: 10px;
+    border-radius: 0.625rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    padding: 0 33px;
+    padding: 0 2.0625rem;
     text-align: center;
     z-index: 2;
+
     img {
-        margin: 15px 0 15px 0;
+        margin: 0.9375rem 0 0.9375rem 0;
     }
+
     h1 {
-        margin-bottom: 15px;
+        margin-bottom: 0.9375rem;
     }
+
     p {
         line-height: 1.8em;
-        margin-bottom: 15px;
+        margin-bottom: 0.9375rem;
     }
+
     @include for-size(phone-only) {    
         width: 90%; 
         height: auto;
-        top: 50px;
+        top: 3.125rem;
     }
 }
