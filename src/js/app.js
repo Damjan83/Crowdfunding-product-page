@@ -6,6 +6,7 @@ const targetValueEle = document.getElementById('donation__target-amount');
 const btnPledge = document.querySelectorAll('.btn-pledge');
 const modalConfirm = document.querySelector('.modal--confirm');
 const mdl = document.querySelector('.modal');
+const mdlContent = document.querySelector('.modal-content');
 const btnModal = document.querySelectorAll('.btn-modal');
 const btnClose = document.querySelector('.modal-header__close');
 const burger = document.querySelector('.main-nav__burger');
@@ -64,9 +65,9 @@ for (let i = 0; i < btnPledge.length; i++) {
 
         modalConfirm.style.display = 'block'
 
-        /*setTimeout(function() {
+        setTimeout(function() {
             modalConfirm.style.display = 'none'
-        }, 3000);*/
+        }, 3000);
 
     });
 }
@@ -119,9 +120,6 @@ btnSupport.addEventListener('click', () => {
     modalConfirm.style.display = 'none';
 });
 
-mdl.addEventListener('click', () => {
-    mdl.style.display = 'none';
-});
 
 const x = setInterval( () => {
     const now = new Date().getTime();
@@ -153,6 +151,16 @@ function updateApp() {
     progressBar.style.width = (app.currentValue / app.targetValue ) * 100 + "%";
 }
 
-updateApp();
 
+// Srediti malo
+
+const aaa = document.getElementById('mmm');
+window.onclick = function(event) {
+    if (event.target == aaa) {
+      mdl.style.display = "none";
+    }
+}
+
+
+updateApp();
 

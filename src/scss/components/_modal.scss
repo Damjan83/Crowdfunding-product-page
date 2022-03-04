@@ -7,11 +7,10 @@
     top: 0;
     background-color: rgba(0, 0, 0, 0.5);
     overflow: scroll;
-    padding: 0 20px;
     z-index: 1;
 
     @include for-size(phone-only) {    
-        padding: 0;
+        padding: 0 20px;
     }
 }
 
@@ -25,6 +24,7 @@
     padding: 20px;
     position: relative;
     top: 30px;
+    display: block;
 
     @include for-size(phone-only) {    
         width: 90%; 
